@@ -1,0 +1,22 @@
+.faq-container {
+  height: 100%;
+  padding-top: 10em;
+  color: white;
+  line-height: 1.6;
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    color: #a0a0a0;
+  }
+}
+
+// SMALL SCREEN
+
+@media only screen and (max-width: 1024px) {
+  .faq-container {
+    padding-top: 5em;
+  }
+}

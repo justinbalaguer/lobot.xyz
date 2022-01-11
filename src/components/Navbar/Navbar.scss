@@ -1,0 +1,58 @@
+nav {
+  padding: 4em 0em 2em 0em;
+  z-index: 9999999999999999999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo-container {
+    position: fixed;
+    left: 0;
+    padding-left: 10em;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .menu-container {
+    display: flex;
+    position: fixed;
+    right: 0;
+    padding-right: 10em;
+    a {
+      padding: 1em;
+      color: white;
+    }
+    button {
+      // font-size: 8px;
+      color: white;
+      background-color: #141414;
+
+      .connected {
+        color: green;
+      }
+      .disconnected {
+        color: red;
+      }
+    }
+  }
+}
+
+// SMALL SCREEN
+
+@media only screen and (max-width: 1024px) {
+  nav {
+    padding: 1em 0em 0em 0em;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+    .logo-container {
+      position: unset;
+      padding-left: 0;
+    }
+    .menu-container {
+      display: none;
+    }
+  }
+}
